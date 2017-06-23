@@ -27,7 +27,6 @@ import java.net.URL;
 public class StartActivity extends AppCompatActivity {
 
     private String TAG = "StartActivity";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
