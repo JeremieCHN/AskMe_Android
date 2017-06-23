@@ -369,6 +369,16 @@ public class LoginOrRegisterActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+
+            // check whether the service is running
+            boolean isRunning = false;
+            ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+            for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE))
+                if (service.service.getClassName().equals("com.example.xu.rewardtask.NoticeService"))
+                    isRunning = true;
+
+            if (!isRunning)
+                startService(new Intent(LoginOrRegisterActivity.this, NoticeService.class));
         }
     }
 
