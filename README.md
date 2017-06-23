@@ -1,5 +1,8 @@
 # AskMe_Android
 软件综合设计实验
+## 服务端地址
+<a href="https://github.com/xujiachen/AskMe_Server">服务器GitHub地址</a>
+
 ## Issue提交文件列表
 1.安装部署说明<br />
 2.Final APK <i>最终输出的APK文件</i><br />
