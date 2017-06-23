@@ -35,7 +35,6 @@ public class StartActivity extends AppCompatActivity {
 
         initCurrentUser();
 
-
         Handler handler = new Handler();
         Runnable runnable = new Runnable() {
             @Override
